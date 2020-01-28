@@ -8,14 +8,14 @@ import 'firebase/functions';
 import * as firebaseui  from 'firebaseui';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyC6znd8LOLGPvzifTO_z4nBDicDsQR3DCI",
-    authDomain: "document-ad406.firebaseapp.com",
-    databaseURL: "https://document-ad406.firebaseio.com",
-    projectId: "document-ad406",
-    storageBucket: "document-ad406.appspot.com",
-    messagingSenderId: "702412303800",
-    appId: "1:702412303800:web:a8a12251ff725c548e334d",
-    measurementId: "G-XT4VKYJBEL"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
 };
 
 const uiConfig = {
