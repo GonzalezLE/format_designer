@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { watchUserChanges } from './../../services/firebase';
-import { Animated } from 'react-animated-css';
 import './linetime.css';
 /**
  * import {Animated} from "react-animated-css";
@@ -11,23 +10,106 @@ watchUserChanges((user) => {
 class Pages extends Component {
     render() {
         return (
-            <div>
+         
+            <div className="container">
                 <div className="timeline">
-                    <div className="container left">
-                        <div className="content">
-                        <img  class="img" src="gs://document-ad406.appspot.com/1.png"/>
-                            <h2>2017</h2>
-                            <p>Lorem ipsum..</p>
+                    <div className="timeline-event">
+                        <div className="card timeline-content ">
+                            <div className="card-image waves-effect waves-block waves-light">
+                                <img className="activator" alt="prueba" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMuDUH65yScQXe3Gnhwwgrf8fYfXfdAqnxwaky9AvRbjZ4eVz&s" />
+                            </div>
+                            {/**contenido del cuerpo */}
+                            <div className="card-content">
+                                <span className="card-title activator grey-text text-darken-4">Ver ejemplo<i className="material-icons right">more_vert</i></span>
+                                <div className="input-field col s6">
+                                    <input id="last_name" type="text" className="validate" />
+                                    <label htmlFor="last_name">Nombre quien dirige</label>
+                                </div>
+                            </div>
+                            <div className="card-reveal">
+                                <span className="card-title grey-text text-darken-4">quien dirige<i className="material-icons right">close</i></span>
+                                <p> poner texto de ejemplo </p>
+                            </div>
+                        </div>
+                        <div className="timeline-badge blue white-text item" >
+                            1
                         </div>
                     </div>
-                    <div className="container right">
-                        <div className="content">
-                            <h2>2016</h2>
-                            <p>Lorem ipsum..</p>
+                    {/**card 2 */}
+                    <div className="timeline-event">
+                        <div className="card timeline-content ">
+                            <div className="card-image waves-effect waves-block waves-light">
+                                <img className="activator" alt="prueba" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMuDUH65yScQXe3Gnhwwgrf8fYfXfdAqnxwaky9AvRbjZ4eVz&s" />
+                            </div>
+                            {/**contenido del cuerpo */}
+                            <div className="card-content">
+                                <span className="card-title activator grey-text text-darken-4">Ver ejemplo<i className="material-icons right">more_vert</i></span>
+                                <div className="input-field col s6">
+                                    <input id="last_name" type="text" className="validate" />
+                                    <label htmlFor="last_name">Nombre quien dirige</label>
+                                </div>
+                            </div>
+                            <div className="card-reveal">
+                                <span className="card-title grey-text text-darken-4">quien dirige<i className="material-icons right">close</i></span>
+                                <p> poner texto de ejemplo </p>
+                            </div>
+                        </div>
+                        <div className="timeline-badge blue white-text item" >
+                            2
+                        </div>
+                    </div>
+
+                    {/**card 3 */}
+
+                    <div className="timeline-event">
+                        <div className="card timeline-content ">
+                            <div className="card-image waves-effect waves-block waves-light">
+                                <img className="activator" alt="prueba" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMuDUH65yScQXe3Gnhwwgrf8fYfXfdAqnxwaky9AvRbjZ4eVz&s" />
+                            </div>
+                            {/**contenido del cuerpo */}
+                            <div className="card-content">
+                                <span className="card-title activator grey-text text-darken-4">Ver ejemplo<i className="material-icons right">more_vert</i></span>
+                                <div className="input-field col s6">
+                                    <input id="last_name" type="text" className="validate" />
+                                    <label htmlFor="last_name">Nombre quien dirige</label>
+                                </div>
+                            </div>
+                            <div className="card-reveal">
+                                <span className="card-title grey-text text-darken-4">quien dirige<i className="material-icons right">close</i></span>
+                                <p> poner texto de ejemplo </p>
+                            </div>
+                        </div>
+                        <div className="timeline-badge blue white-text item" >
+                            3
+                        </div>
+                    </div>
+
+                    {/**card 4 */}
+                    <div className="timeline-event">
+                        <div className="card timeline-content ">
+                            <div className="card-image waves-effect waves-block waves-light">
+                                <img className="activator" alt=" prueba" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMuDUH65yScQXe3Gnhwwgrf8fYfXfdAqnxwaky9AvRbjZ4eVz&s" />
+                            </div>
+                            {/**contenido del cuerpo */}
+                            <div className="card-content">
+                                <span className="card-title activator grey-text text-darken-4">Ver ejemplo<i className="material-icons right">more_vert</i></span>
+                                <div className="input-field col s6">
+                                    <input id="last_name" type="text" className="validate" />
+                                    <label htmlFor="last_name">Nombre quien dirige</label>
+                                </div>
+                            </div>
+                            <div className="card-reveal">
+                                <span className="card-title grey-text text-darken-4">quien dirige<i className="material-icons right">close</i></span>
+                                <p> poner texto de ejemplo </p>
+                            </div>
+                        </div>
+                        <div className="timeline-badge blue white-text item" >
+                            4
                         </div>
                     </div>
                 </div>
             </div>
+
         );
     }
 }
