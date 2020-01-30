@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Dashboard from './pages/dashboard';
+import {Provider} from 'react-redux'
 //import Login from './pages/login';
 class Router extends Component {
     render() {
